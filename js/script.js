@@ -14,8 +14,8 @@ function calculate () {
   const height = parseFloat(document.getElementById('pyramid-height').value)
 
   // process
-  const area = (length * width * height) / 3
+  const volume = (length * width * height) / 3
 
    // output
-  document.getElementById('area').innerHTML = 'Area of the pyramid is: ' + area.toFixed(2) + ' km³'
+  document.getElementById('area').innerHTML = 'Area of the pyramid is: ' + volume.toFixed(2) + ' km³'
 }
