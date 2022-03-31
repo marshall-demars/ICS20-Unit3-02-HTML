@@ -17,5 +17,5 @@ function calculate () {
   const volume = (length * width * height) / 3
 
    // output
-  document.getElementById('area').innerHTML = 'Area of the pyramid is: ' + volume.toFixed(2) + ' km³'
+  document.getElementById('volume').innerHTML = 'Area of the pyramid is: ' + volume.toFixed(2) + ' km³'
 }
