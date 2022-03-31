@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
-<!-- ICS2O-UnitX-YY-HTML -->
+<!-- ICS2O-Unit3-02-HTML -->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="XXX">
+    <meta name="description" content="Volume of a pyramid">
     <meta name="keywords" content="mths, ics2o">
     <meta name="author" content="Marshall">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +11,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <title>XXX</title>
+    <title>Volume of a pyramid</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-teal.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-teal.min.css" />
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -23,10 +22,44 @@
     <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class = "mdl-layout__header">
         <div class = "mdl-layout__header-row">      
-          <span class = "mdl-layout-title">XXX</span>
+          <span class = "mdl-layout-title">Calculating the volume of a pyramid</span>
         </div>       
       </header>
       <main class = "mdl-layout__content">
+        <img src="./images/pyramid.png" alt="rectangle" width="25%" height="auto" />
+        <!-- basic text -->
+        <p>Input the length, width and height for the pyramid (km)<br>Formula= (l x w x h) / 3</p>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" input type="number" step=".01" id="pyramid-length">
+            <label class="mdl-textfield__label" for="pyramid-length">Input length</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" input type="number" step=".01" id="pyramid-width">
+            <label class="mdl-textfield__label" for="pyramid-width">Input width</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" input type="number" step=".01" id="pyramid-height">
+            <label class="mdl-textfield__label" for="pyramid-height">Input height</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Colored raised button -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="calculate()">
+          Calculate
+        </button>
+        <div id="answer">
+          <div id="area"></div>
+        </div>
       </main>
     </div>
   </body>
